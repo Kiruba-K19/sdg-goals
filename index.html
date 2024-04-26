@@ -241,6 +241,8 @@
           g1_marker.addEventListener('markerFound', function () {
                 var video1 = document.querySelector('#video1');
                 video1.components.material.material.map.image.play();
+                var audio1 = document.querySelector('#audio1'); 
+                audio1.play();
             });
 
             g1_marker.addEventListener('markerLost', function () {
