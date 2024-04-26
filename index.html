@@ -15,9 +15,8 @@
                 smoothTolerance="0.01"
                 smoothThreshold="5"  id="g1_marker">
             <!-- Video element -->
-            <a-video id="video1" src="#v1" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.15 0.15 0.25"   class="clickable"
+            <a-video id="video1" src="#v1" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25"   class="clickable"
                     gesture-handler visible="true"></a-video>
-            <audio id="audio1" src="audio1.mp3"></audio>
         </a-marker>
 <!-- goal2 -->
         <a-marker type="pattern" url="marker-2.patt" emitevents="true" smooth="true"
@@ -242,7 +241,6 @@
           g1_marker.addEventListener('markerFound', function () {
                 var video1 = document.querySelector('#video1');
                 video1.components.material.material.map.image.play();
-                audio1.play();
             });
 
             g1_marker.addEventListener('markerLost', function () {
